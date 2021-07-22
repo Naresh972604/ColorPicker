@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.css">
+  <style>
+      .card-body p{
+        margin-bottom: 0px;
+      }
+      .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+        background: white;
+        color: black;
+      }
+      .navbar-dark .navbar-nav .nav-link{
+          color: white;
+      }
+      .nav-justified .nav-item, .nav-justified>.nav-link{
+        margin: 0px 4px;
+        background: #e9ecef;
+      }
+      .redBG{
+        background-color: #dc3545;
+      }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.js"></script>
+  <script src="CP.js"></script>
+</head>
+<body>
+<br/>  
+<div class="container">
+    <div class="row">  
+        <div class="col-md-12">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                <a class="nav-link active" href="#Heading" data-toggle = "pill">Heading</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#SideBar" data-toggle = "pill">Sidebar</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#MainBody" data-toggle = "pill">Main body</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br/>
+    
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active show" id="Heading">
+                <div class="row">
+                    <div class="col-md-4">
+                        <input id="headBG" type="color" /> <label> Background color</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="headName" type="color"/> <label> Your name</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="headButtonColor" type="color" /> <label> Contact button color</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="headMenuTextColor" type="color" /> <label> Menu text color</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="headDesignationColor" type="color" /> <label> Designation</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="headContactButtonText" type="color" /> <label> Contact button text color</label>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="SideBar">
+                <div class="row">
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Background color</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color"/> <label> Your name</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Contact button color</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Menu text color</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Designation</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Contact button text color</label>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="MainBody">
+                <div class="row">
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Background color</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color"/> <label> Your name</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Contact button color</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Menu text color</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Designation</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="" type="color" /> <label> Contact button text color</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    <br/>
+    <div class="row">
+        <div class="col-md-12"> 
+            <nav class="navbar navbar-expand-sm navbar-dark redBG" id="bgHead">
+
+                <a class="navbar-brand" href="#">
+                    <img src="Blank_DP.jpg" class="rounded-circle" alt="Cinque Terre" width="40" height="40" style="vertical-align: text-bottom;"> 
+                    <span>
+                        <dl style="display: inline-block;margin-bottom: 0px;">
+                            <dt id="userName">Your Name</dt>
+                            <dt style="font-size: 10px;" id="userRole">UI DEVELOPER</dt>
+                        </dl>
+                    </span>
+                </a>
+
+                <ul class="navbar-nav ml-auto" style="text-align: right;">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" id="contact">Contact me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menuItem" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menuItem" href="#">Get in Touch</a>
+                  </li>
+                </ul>
+              </nav>
+              
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <h3>There are many variations of passages</h3><br/>
+            <p>
+                To create a new redaction in WebViewer, click on the redaction tool icon to enter redaction mode. Next click and drag on the document to create a new redaction. Note that when creating a redaction on top of text, multiple rectangles are created, similar to when highlighting text.
+            </p>
+            <p>
+                To create a new redaction in WebViewer, click on the redaction tool icon to enter redaction mode. Next click and drag on the document to create a new redaction. Note that when creating a redaction on top of text, multiple rectangles are created, similar to when highlighting text.
+            </p>
+            <div class="alert alert-danger" style="padding-left: 0px;">
+                <img src="Profile.png" class="rounded" alt="Cinque Terre" width="250" height="200" style="vertical-align: text-bottom;float: left;object-fit: contain;object-position: top;padding-right: 10px;"> 
+                <strong>Contrary of popular belif</strong> 
+                <p>
+                    To create a new redaction in WebViewer, click on the redaction tool icon to enter redaction mode. Next click and drag on the document to create a new redaction. Note that when creating a redaction on top of text, multiple rectangles are created, similar to when highlighting text.
+                </p>
+                <button type="button" class="btn btn-danger" style="width: 28rem;">Send it to me</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="alert alert-danger">
+                <div class="card" style="background: #f8d7da;border: 0px;">
+                    <img class="card-img-top" src="Profile.png" alt="Card image">
+                    <div class="card-body">
+                          <p class="card-text">Your Name</p>
+                          <p class="card-text">Company Name</p>
+                          <p class="card-text">Designation</p>
+                      <br/>
+                      <h4 class="card-title">123-456-7890</h4>
+                      <div style="padding-bottom: 10px;">
+                        <a href="#" class="btn btn-danger stretched-link" style="width: 100%;">Get in Touch</a>
+                      </div>
+                      <div style="padding-bottom: 10px;">
+                        <a href="#" class="btn stretched-link" style="width: 100%;background-color: white;">View Website</a>
+                      </div>
+                      <div style="text-align: center;">
+                        <img src="https://img.icons8.com/color/48/000000/facebook.png"/>
+                        <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
